@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+  <ResponsivePopover showHeader="false" beforeOpen="onBeforeOpen" afterClose="onCancel">
+    <NavContainer id="idNavContainer" width="12rem" height="9rem">
+      <Page id="type" enableScrolling="false">
+        <customHeader>
+          <Toolbar>
+            <ToolbarSpacer />
+            <Button text="Reset" press="onPressReset" />
+          </Toolbar>
+        </customHeader>
+        <List width="100%">
+          <StandardListItem type="Navigation" title="Scratch" press="onSelectDamageType">
+            <customData>
+              <core:CustomData key="type" value="S" />
+            </customData>
+          </StandardListItem>
+          <StandardListItem type="Navigation" title="Dent" press="onSelectDamageType">
+            <customData>
+              <core:CustomData key="type" value="D" />
+            </customData>
+          </StandardListItem>
+          <StandardListItem type="Navigation" title="Paint chip" press="onSelectDamageType">
+            <customData>
+              <core:CustomData key="type" value="C" />
+            </customData>
+          </StandardListItem>
+        </List>
+      </Page>
+      <Page
+        id="severity"
+        class="sapUiResponsiveContentPadding"
+        showNavButton="true"
+        navButtonPress="onNavBack"
+        showFooter="true"
+        enableScrolling="false">
+        <Slider id="idSlider" value="50" liveChange="onChangeSeverity" />
+        <footer>
+          <Toolbar>
+            <Button text="Cancel" press="onCancel" />
+            <ToolbarSpacer />
+            <Button text="Save" press="onSave" />
+          </Toolbar>
+        </footer>
+      </Page>
+    </NavContainer>
+  </ResponsivePopover>
+</core:FragmentDefinition>

@@ -1,0 +1,30 @@
+/* Enter your custom styles here */
+.svgContainer {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.part {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+.part:hover {
+  fill-opacity: 1;
+  fill: #b2b2b2;
+}
+
+.scratch {
+  fill: #d27700;
+  fill-opacity: .5;
+}
+
+.dent {
+  fill: #046c7a;
+  fill-opacity: .5;
+}
+
+.chip {
+  fill: #6c32a9;
+  fill-opacity: .5;
+}

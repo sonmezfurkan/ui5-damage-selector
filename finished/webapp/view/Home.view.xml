@@ -1,0 +1,11 @@
+<mvc:View controllerName="ui5.damageselector.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" class="sapUiResponsiveContentPadding" title="{i18n>title}">
+        <content>
+            <VBox class="svgContainer">
+                <core:HTML id="idSvgContainer" afterRendering="onSvgContainerRendered" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
